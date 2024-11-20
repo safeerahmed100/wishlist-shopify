@@ -1,0 +1,10 @@
+{%comment%} before  {% if quick_add == 'standard' %} <div class="quick-add no-js-hidden"> {%endcomment%}
+
+{% if settings.enable-wishlist %}
+<button class="wishlist_button" onclick="toggleWishlist('{{ card_product.title }}','{{ card_product.featured_image | img_url: '' }}', '{{ card_product.price |  money_with_currency  }}','{{ card_product.url }}','{% unless card_product.compare_at_price < card_product.price %}{{ card_product.compare_at_price | money_with_currency }}{% endunless %}','{% unless card_product.compare_at_price > card_product.price %}hide_badge{% endunless %}',`{{ card_product.metafields.judgeme.badge }}`,'{{ card_product.metafields.custom.disccount }}')">
+                
+<svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.3599 22.5528L15.2078 22.6978L15.0406 22.5528C7.81683 16.3018 3.04157 12.1683 3.04157 7.97687C3.04157 5.07619 5.32275 2.90068 8.36431 2.90068C10.7063 2.90068 12.9875 4.35102 13.7935 6.32348H16.6222C17.4282 4.35102 19.7094 2.90068 22.0514 2.90068C25.0929 2.90068 27.3741 5.07619 27.3741 7.97687C27.3741 12.1683 22.5989 16.3018 15.3599 22.5528ZM22.0514 0C19.4052 0 16.8655 1.17477 15.2078 3.01671C13.5502 1.17477 11.0105 0 8.36431 0C3.6803 0 0 3.49532 0 7.97687C0 13.4446 5.17067 17.9262 13.0027 24.6993L15.2078 26.6137L17.413 24.6993C25.245 17.9262 30.4157 13.4446 30.4157 7.97687C30.4157 3.49532 26.7354 0 22.0514 0Z" fill="black"/>
+</svg>
+              </button>
+            {% endif %}
