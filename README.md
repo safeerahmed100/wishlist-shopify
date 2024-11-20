@@ -4,7 +4,7 @@ This is a lightweight, free wishlist functionality for Shopify stores that works
 
 This functionality was created as a free alternative to the limited capabilities of existing paid apps. It has been customized to work seamlessly across collection pages and related products, making it more versatile than other solutions on the market.
 
-The core code was adapted from WebSensePro's guide on adding a wishlist in Shopify without an app.
+The core code was adapted from [WebSensePro's](https://websensepro.com/blog/how-to-add-wishlist-in-shopify-without-app/) guide on adding a wishlist in Shopify without an app.
 
 ## Features
 Works Across Pages: Adds wishlist functionality to product pages, collection pages, and related products.
@@ -48,5 +48,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 Shopify for providing a powerful and flexible e-commerce platform.
-WebSensePro for the inspiration and base code.
+[WebSensePro](https://websensepro.com/blog/how-to-add-wishlist-in-shopify-without-app/) for the inspiration and base code.
 The open-source community for providing inspiration and support.
